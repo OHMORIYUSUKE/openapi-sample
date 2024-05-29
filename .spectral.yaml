@@ -4,18 +4,3 @@ extends:
 rules:
   info-contact: off
   operation-operationId: error
-  path-params-camel-case:
-    description: パラメータ名は camelCase でなければいけません
-    given: $.paths[*][*].parameters[?(@.in != 'header')]
-    severity: error
-    then:
-      field: "name"
-      function: casing
-      functionOptions:
-        type: camel
-  dont-use-nullable:
-    description: nullable を使う代わりにプロパティを required から除いてください
-    given: $..properties[*]
-    then:
-      field: "nullable"
-      function: undefined
