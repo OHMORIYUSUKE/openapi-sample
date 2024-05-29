@@ -1,14 +1,6 @@
 extends: "spectral:oas"
 
 rules:
-  info-description:
-    description: "Info 'description' must be present and non-empty string."
-    recommended: false # このルールを無効にする
-
-  operation-description:
-    description: "Operation 'description' must be present and non-empty string."
-    recommended: false # このルールを無効にする
-
-  operation-tag-defined:
-    description: "Operation tags must be defined in global tags."
-    recommended: false # このルールを無効にする
+  info-description: off
+  operation-description: off
+  operation-tag-defined: off
