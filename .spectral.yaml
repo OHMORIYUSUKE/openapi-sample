@@ -2,5 +2,6 @@ extends: "spectral:oas"
 
 rules:
   info-description: off
+  info-contact: off
   operation-description: off
   operation-tag-defined: off
