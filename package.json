@@ -1,0 +1,21 @@
+{
+  "name": "open-api-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "lint": "spectral lint 'openapi.yaml'",
+    "lint:ci": "spectral lint --format github-actions -F warn 'openapi.yaml'",
+    "check": "prettier --check .",
+    "fix": "prettier --write .",
+    "build": "redocly build-docs -o ./dist/index.html ./openapi.yaml"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.13.4",
+    "@redocly/cli": "^1.13.0",
+    "@stoplight/spectral-cli": "^6.11.1",
+    "prettier": "^3.2.5"
+  }
+}
