@@ -10,7 +10,8 @@
     "lint:ci": "spectral lint --format github-actions -F warn 'openapi.yaml'",
     "check": "prettier --check .",
     "fix": "prettier --write .",
-    "build": "redocly build-docs -o ./dist/index.html ./openapi.yaml"
+    "build": "redocly build-docs -o ./dist/index.html ./openapi.yaml",
+    "generate:typescript": "openapi-generator-cli generate -i openapi.yaml -g typescript-axios -o generated/ts"
   },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.13.4",
