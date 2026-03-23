@@ -14,7 +14,7 @@
     "generate:typescript": "openapi-generator-cli generate -i openapi.yaml -g typescript-axios -o generated/ts"
   },
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "^2.13.4",
+    "@openapitools/openapi-generator-cli": "^2.30.2",
     "@redocly/cli": "^1.13.0",
     "@stoplight/spectral-cli": "^6.11.1",
     "prettier": "^3.2.5"
